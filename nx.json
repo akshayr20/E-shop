@@ -1,5 +1,5 @@
 {
-  "npmScope": "e",
+  "npmScope": "eshop",
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": "*",
@@ -13,6 +13,12 @@
     },
     "grocery-e2e": {
       "tags": []
+    },
+    "backend": {
+      "tags": ["ecart"]
+    },
+    "data-models": {
+      "tags": ["ecart"]
     }
   }
 }

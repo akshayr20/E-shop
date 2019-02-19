@@ -7,7 +7,7 @@
       "root": "apps/grocery/",
       "sourceRoot": "apps/grocery/src",
       "projectType": "application",
-      "prefix": "e",
+      "prefix": "eshop",
       "schematics": {
         "@nrwl/schematics:component": {
           "styleext": "sass"
@@ -123,6 +123,68 @@
             "tsConfig": "apps/grocery-e2e/tsconfig.e2e.json",
             "exclude": ["**/node_modules/**"]
           }
+        }
+      }
+    },
+    "backend": {
+      "root": "libs/backend",
+      "sourceRoot": "libs/backend/src",
+      "projectType": "library",
+      "prefix": "eshop",
+      "architect": {
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/backend/src/test.ts",
+            "tsConfig": "libs/backend/tsconfig.spec.json",
+            "karmaConfig": "libs/backend/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/backend/tsconfig.lib.json",
+              "libs/backend/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "sass"
+        }
+      }
+    },
+    "data-models": {
+      "root": "libs/data-models",
+      "sourceRoot": "libs/data-models/src",
+      "projectType": "library",
+      "prefix": "eshop",
+      "architect": {
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/data-models/src/test.ts",
+            "tsConfig": "libs/data-models/tsconfig.spec.json",
+            "karmaConfig": "libs/data-models/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/data-models/tsconfig.lib.json",
+              "libs/data-models/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "sass"
         }
       }
     }
