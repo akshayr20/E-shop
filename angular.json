@@ -10,7 +10,7 @@
       "prefix": "e-shop",
       "schematics": {
         "@nrwl/schematics:component": {
-          "styleext": "sass"
+          "styleext": "scss"
         }
       },
       "architect": {
@@ -31,7 +31,7 @@
               "apps/grocery/src/favicon.ico",
               "apps/grocery/src/assets"
             ],
-            "styles": ["apps/grocery/src/styles.sass"],
+            "styles": ["apps/grocery/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -85,7 +85,7 @@
             "polyfills": "apps/grocery/src/polyfills.ts",
             "tsConfig": "apps/grocery/tsconfig.spec.json",
             "karmaConfig": "apps/grocery/karma.conf.js",
-            "styles": ["apps/grocery/src/styles.sass"],
+            "styles": ["apps/grocery/src/styles.scss"],
             "scripts": [],
             "assets": [
               "apps/grocery/src/favicon.ico",
@@ -158,7 +158,7 @@
       },
       "schematics": {
         "@nrwl/schematics:component": {
-          "styleext": "sass"
+          "styleext": "scss"
         }
       }
     },
@@ -189,7 +189,7 @@
       },
       "schematics": {
         "@nrwl/schematics:component": {
-          "styleext": "sass"
+          "styleext": "scss"
         }
       }
     }
@@ -204,10 +204,10 @@
   },
   "schematics": {
     "@nrwl/schematics:application": {
-      "style": "sass"
+      "style": "scss"
     },
     "@nrwl/schematics:library": {
-      "style": "sass"
+      "style": "scss"
     }
   },
   "defaultProject": "grocery"
