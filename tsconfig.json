@@ -13,11 +13,11 @@
     "lib": ["es2017", "dom"],
     "baseUrl": ".",
     "paths": {
-      "@eshop/backend/*": [
+      "@e-shop/*": [
         "libs/*"
       ],
-      "@eshop/backend": ["libs/backend/src/index.ts"],
-      "@eshop/data-models": ["libs/data-models/src/index.ts"]
+      "@e-shop/backend": ["libs/backend/src/index.ts"],
+      "@e-shop/data-models": ["libs/data-models/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

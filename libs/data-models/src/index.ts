@@ -1,1 +1,1 @@
-export { User } from './lib/data-models';
+export { User, Order, Product } from './lib/data-models';
