@@ -42,7 +42,8 @@
     "@nrwl/nx": "7.3.0",
     "@ngrx/effects": "6.1.2",
     "@ngrx/router-store": "6.1.2",
-    "@ngrx/store": "6.1.2"
+    "@ngrx/store": "6.1.2",
+    "start": "ng serve grocery"
   },
   "devDependencies": {
     "@angular/cli": "~7.1.0",
