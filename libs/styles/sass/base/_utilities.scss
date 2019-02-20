@@ -1,0 +1,48 @@
+.ellipsis {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.center-text {
+  text-align: center !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+// Margin-Bottom
+.u-mb-sm {
+  margin-bottom: 2rem;
+}
+
+.u-mb-md {
+  margin-bottom: 3rem;
+}
+
+.u-mb-lg {
+  margin-bottom: 4rem;
+}
+
+// Margin-Top
+.u-mt-sm {
+  margin-bottom: 2rem;
+}
+
+.u-mt-md {
+  margin-bottom: 3rem;
+}
+
+.u-mt-lg {
+  margin-bottom: 4rem;
+}

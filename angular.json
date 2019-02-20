@@ -209,6 +209,13 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "libs/common/ui/src/test.ts",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "libs/shared-assets",
+                "output": "/assets"
+              }
+            ],
             "tsConfig": "libs/common/ui/tsconfig.spec.json",
             "karmaConfig": "libs/common/ui/karma.conf.js"
           }

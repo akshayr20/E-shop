@@ -1,27 +1,74 @@
-<ui-responsive-img
-  class="logo"
-  imageLink="../assets/images/logo.png"
-></ui-responsive-img>
+<!--
+  <header class="header">
+    <img src="./../assets/images/logo.png" alt="Trello logo" class="logo" />
 
-<form action="#" class="search">
-  <input type="text" class="search__input" placeholder="Search hotels" />
-  <button class="search__button">
-    <ui-icon name="icon-search" class="search__icon"></ui-icon>
-  </button>
-</form>
-<nav class="user-nav">
-  <div class="user-nav__icon-box">
-    <ui-icon name="icon-bookmark" class="user-nav__icon"></ui-icon>
+    <form action="#" class="header--search search">
+      <input type="text" class="search__input" placeholder="Search hotels" />
+      <button class="search__button">
+        <ui-icon name="icon-search" class="search__icon"></ui-icon>
+      </button>
+    </form>
+
+    <nav class="header-btn">
+      <ul class="nav">
+        <li class="nav__item">
+          <ui-icon name="icon-account_circle" class="nav__icon-primary"></ui-icon>
+          <div class="nav__dropdown">
+            <strong class="text-uppercase"
+              >My Account
+              <ui-icon
+                name="icon-arrow_drop_down"
+                class="nav__icon-secondary"
+              ></ui-icon
+            ></strong>
+            <a href="#" class="nav__item--link text-uppercase">Login</a> /
+            <a href="#" class="nav__item--link text-uppercase">Join</a>
+          </div>
+        </li>
+        <li class="nav__item">
+          <ui-icon
+            name="icon-add_shopping_cart"
+            class="nav__icon-primary"
+          ></ui-icon>
+          <strong class="text-uppercase">My CART:</strong> <span>38.42</span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+-->
+
+<header class="header">
+  <div class="logo">
+    <img src="./../assets/images/logo.png" alt="E-Shop logo" />
   </div>
-  <div class="user-nav__icon-box">
-    <div class="user-nav__icon-box">
-      <ui-icon name="icon-bookmark" class="user-nav__icon"></ui-icon>
+  <div class="search-bar">
+    <form class="search">
+      <input type="text" class="search__input" placeholder="Search hotels" />
+      <button class="search__button">
+        <ui-icon name="icon-search" class="search__icon"></ui-icon>
+      </button>
+    </form>
+  </div>
+  <div class="nav">
+    <div class="nav__content">
+      <ui-icon name="icon-account_circle" class="nav__icon"></ui-icon>
+      <div class="nav__action">
+        <h3 class="text-uppercase heading-3">
+          My Account
+          <ui-icon name="icon-arrow_drop_down" class="dropdown-icon"></ui-icon>
+        </h3>
+        <span>
+          <a href="#" class="nav__item--link text-uppercase">Login</a> /
+          <a href="#" class="nav__item--link text-uppercase">Join</a>
+        </span>
+      </div>
+    </div>
+    <div class="nav__content">
+      <ui-icon class="nav__icon" name="icon-add_shopping_cart"></ui-icon>
+      <div class="nav__action">
+        <h3 class="text-uppercase heading-3">My CART:</h3>
+        <span>38.42</span>
+      </div>
     </div>
   </div>
-  <div class="user-nav__user">
-    <ui-responsive-img
-      imageLink="../../assets/img/logo.jpg"
-    ></ui-responsive-img>
-    <span class="user-nav__user-name"></span>
-  </div>
-</nav>
+</header>

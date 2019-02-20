@@ -1,128 +1,77 @@
 @import './libs/styles/sass/main.scss';
 
-:host {
-  height: 7rem;
-  font-size: 1.4rem;
-  background-color: #fff;
-  border-bottom: var(--line);
+// .custom-menu {
+//   position: absolute;
+//   padding: 15px;
+//   background: #fff;
+//   -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.175);
+//   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.175);
+//   z-index: 100;
+//   top: 100%;
+//   min-width: 200px;
+//   opacity: 0;
+//   visibility: hidden;
+//   -webkit-transition: 0.3s all;
+//   transition: 0.3s all;
+// }
 
-  display: flex;
-  justify-content: space-between;
+.header {
+  margin: 0 2rem;
+  display: grid;
   align-items: center;
-  @media screen and (max-width: $bp-smallest) {
-    flex-wrap: wrap;
-    align-content: space-around;
-    height: 11rem;
+  grid-template-rows: 7rem;
+  grid-template-columns: minmax(3.5rem, 7rem) 3fr 2fr repeat(2, max-content);
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 7rem 3rem;
+    grid-template-columns: minmax(3.5rem, 7rem) 1fr repeat(2, max-content);
   }
+  grid-gap: 2rem;
 }
 
 .logo {
-  height: 3.25rem;
-  margin-left: 2rem;
-}
-
-.search {
-  flex: 0 0 40%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @media screen and (max-width: $bp-smallest) {
-    order: 1;
-    flex: 0 0 100%;
-    background-color: var(--color-grey-light-2);
-  }
-
-  &__input {
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    background-color: var(--color-grey-light-2);
-    border: none;
-    padding: 0.7rem 2rem;
-    border-radius: 100px;
-    width: 90%;
-    transition: all 0.2s;
-    margin-right: -3.25rem;
-    &:focus {
-      outline: none;
-      width: 100%;
-      background-color: var(--color-grey-light-3);
-    }
-    &::-webkit-input-placeholder {
-      font-weight: 100;
-      color: var(--color-grey-light-4);
-    }
-  }
-  &__input:focus + &__button {
-    background-color: var(--color-grey-light-3);
-  }
-  &__button {
-    border: none;
-    background-color: var(--color-grey-light-2);
-
-    &:focus {
-      outline: none;
-    }
-
-    &:active {
-      transform: translateY(2px);
-    }
-  }
-  &__icon {
-    height: 2rem;
-    width: 2rem;
-    fill: var(--color-grey-dark-3);
-  }
-}
-
-.user-nav {
-  align-self: stretch;
-
-  display: flex;
-  align-items: center;
-
-  & > * {
-    padding: 0 2rem;
+  grid-column: 1/2;
+  align-self: center;
+  img {
+    width: 100%;
     height: 100%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
   }
+}
 
-  & > *:hover {
-    background-color: var(--color-grey-light-2);
+.search-bar {
+  grid-column: 3/4;
+  align-self: center;
+  @media only screen and (max-width: $bp-medium) {
+    grid-row: 2/3;
+    grid-column: 1/-1;
   }
+}
 
-  &__icon-box {
-    position: relative;
+.nav {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 2rem;
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 4/5;
   }
-
-  &__icon {
-    height: 2.5rem;
-    width: 2.5rem;
-    fill: var(--color-grey-dark-2);
-  }
-
-  &__notification {
-    font-size: 0.8rem;
-    height: 1.75rem;
-    width: 1.75rem;
-    border-radius: 50%;
-    background-color: var(--color-primary);
-    color: #fff;
-    position: absolute;
-    top: 1.5rem;
-    right: 1.1rem;
-
-    display: flex;
+  &__content {
+    display: grid;
     justify-content: center;
     align-items: center;
+    grid-template-rows: 7rem;
+    grid-template-columns: minmax(2.5rem, 4rem) max-content;
+    grid-gap: 1rem;
   }
+  &__icon {
+    fill: var(--color-primary);
+  }
+  &__action {
+    display: grid;
+    grid-template-rows: max-content max-content;
+  }
+}
 
-  &__user-photo {
-    height: 3.75rem;
-    border-radius: 50%;
-    margin-right: 1rem;
-  }
+.dropdown-icon {
+  height: 2rem;
+  width: 2rem;
+  margin-left: -0.5rem;
 }
