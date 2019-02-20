@@ -22,6 +22,9 @@
     },
     "common-ui": {
       "tags": ["ui"]
+    },
+    "common-directives": {
+      "tags": ["di"]
     }
   }
 }

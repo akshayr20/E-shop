@@ -223,6 +223,37 @@
           "styleext": "scss"
         }
       }
+    },
+    "common-directives": {
+      "root": "libs/common/directives",
+      "sourceRoot": "libs/common/directives/src",
+      "projectType": "library",
+      "prefix": "di",
+      "architect": {
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/common/directives/src/test.ts",
+            "tsConfig": "libs/common/directives/tsconfig.spec.json",
+            "karmaConfig": "libs/common/directives/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common/directives/tsconfig.lib.json",
+              "libs/common/directives/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {
