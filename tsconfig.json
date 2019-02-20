@@ -18,7 +18,16 @@
       "@e-shop/data-models": ["libs/data-models/src/index.ts"],
       "@e-shop/common/ui": ["libs/common/ui/src/index.ts"],
       "@e-shop/common/directives": ["libs/common/directives/src/index.ts"],
-      "@e-shop/material/ui": ["libs/material/ui/src/index.ts"]
+      "@e-shop/material/ui": ["libs/material/ui/src/index.ts"],
+      "@e-shop/grocery/feature-products": [
+        "libs/grocery/feature-products/src/index.ts"
+      ],
+      "@e-shop/grocery/feature-product-detail": [
+        "libs/grocery/feature-product-detail/src/index.ts"
+      ],
+      "@e-shop/grocery/feature-product-checkout": [
+        "libs/grocery/feature-product-checkout/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -291,6 +291,99 @@
           "styleext": "scss"
         }
       }
+    },
+    "grocery-feature-products": {
+      "root": "libs/grocery/feature-products",
+      "sourceRoot": "libs/grocery/feature-products/src",
+      "projectType": "library",
+      "prefix": "e-shop",
+      "architect": {
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/grocery/feature-products/src/test.ts",
+            "tsConfig": "libs/grocery/feature-products/tsconfig.spec.json",
+            "karmaConfig": "libs/grocery/feature-products/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/grocery/feature-products/tsconfig.lib.json",
+              "libs/grocery/feature-products/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "grocery-feature-product-detail": {
+      "root": "libs/grocery/feature-product-detail",
+      "sourceRoot": "libs/grocery/feature-product-detail/src",
+      "projectType": "library",
+      "prefix": "e-shop",
+      "architect": {
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/grocery/feature-product-detail/src/test.ts",
+            "tsConfig": "libs/grocery/feature-product-detail/tsconfig.spec.json",
+            "karmaConfig": "libs/grocery/feature-product-detail/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/grocery/feature-product-detail/tsconfig.lib.json",
+              "libs/grocery/feature-product-detail/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "grocery-feature-product-checkout": {
+      "root": "libs/grocery/feature-product-checkout",
+      "sourceRoot": "libs/grocery/feature-product-checkout/src",
+      "projectType": "library",
+      "prefix": "e-shop",
+      "architect": {
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/grocery/feature-product-checkout/src/test.ts",
+            "tsConfig": "libs/grocery/feature-product-checkout/tsconfig.spec.json",
+            "karmaConfig": "libs/grocery/feature-product-checkout/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/grocery/feature-product-checkout/tsconfig.lib.json",
+              "libs/grocery/feature-product-checkout/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {
