@@ -1,3 +1,27 @@
-<p>
-  header works!
-</p>
+<ui-responsive-img
+  class="logo"
+  imageLink="../assets/images/logo.png"
+></ui-responsive-img>
+
+<form action="#" class="search">
+  <input type="text" class="search__input" placeholder="Search hotels" />
+  <button class="search__button">
+    <ui-icon name="icon-search" class="search__icon"></ui-icon>
+  </button>
+</form>
+<nav class="user-nav">
+  <div class="user-nav__icon-box">
+    <ui-icon name="icon-bookmark" class="user-nav__icon"></ui-icon>
+  </div>
+  <div class="user-nav__icon-box">
+    <div class="user-nav__icon-box">
+      <ui-icon name="icon-bookmark" class="user-nav__icon"></ui-icon>
+    </div>
+  </div>
+  <div class="user-nav__user">
+    <ui-responsive-img
+      imageLink="../../assets/img/logo.jpg"
+    ></ui-responsive-img>
+    <span class="user-nav__user-name"></span>
+  </div>
+</nav>

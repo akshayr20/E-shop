@@ -7,7 +7,17 @@ import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [ResponsiveImageComponent, IconComponent, HeaderComponent, FooterComponent],
-  exports: [ResponsiveImageComponent, IconComponent]
+  declarations: [
+    ResponsiveImageComponent,
+    IconComponent,
+    HeaderComponent,
+    FooterComponent
+  ],
+  exports: [
+    ResponsiveImageComponent,
+    IconComponent,
+    HeaderComponent,
+    FooterComponent
+  ]
 })
 export class CommonUiModule {}
