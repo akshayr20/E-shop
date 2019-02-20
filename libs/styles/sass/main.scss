@@ -1,8 +1,11 @@
 @import './base/animations';
 @import './base/base';
 @import './base/typography';
-@import './base/utilities';
+@import './base/reset';
 
 @import './abstracts/variable';
 
 @import './components/custom-search';
+@import './components/anchor-tag';
+
+@import './utilities/utilities';
