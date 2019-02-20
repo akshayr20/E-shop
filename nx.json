@@ -19,6 +19,9 @@
     },
     "data-models": {
       "tags": ["e-cart"]
+    },
+    "common-ui": {
+      "tags": ["ui"]
     }
   }
 }

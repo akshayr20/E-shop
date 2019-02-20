@@ -8,11 +8,13 @@ import { BackendModule, AddTokenInterceptor } from '@e-shop/backend';
 
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
+import { CommonUiModule } from '@e-shop/common/ui';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    CommonUiModule,
     BackendModule.forRoot(environment.rootUrl),
     NxModule.forRoot(),
     RouterModule.forRoot([], { initialNavigation: 'enabled' })
