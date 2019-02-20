@@ -31,7 +31,10 @@
               "apps/grocery/src/favicon.ico",
               "apps/grocery/src/assets"
             ],
-            "styles": ["apps/grocery/src/styles.scss"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "apps/grocery/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -85,7 +88,10 @@
             "polyfills": "apps/grocery/src/polyfills.ts",
             "tsConfig": "apps/grocery/tsconfig.spec.json",
             "karmaConfig": "apps/grocery/karma.conf.js",
-            "styles": ["apps/grocery/src/styles.scss"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "apps/grocery/src/styles.scss"
+            ],
             "scripts": [],
             "assets": [
               "apps/grocery/src/favicon.ico",
@@ -244,6 +250,37 @@
             "tsConfig": [
               "libs/common/directives/tsconfig.lib.json",
               "libs/common/directives/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "material-ui": {
+      "root": "libs/material/ui",
+      "sourceRoot": "libs/material/ui/src",
+      "projectType": "library",
+      "prefix": "e-shop",
+      "architect": {
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/material/ui/src/test.ts",
+            "tsConfig": "libs/material/ui/tsconfig.spec.json",
+            "karmaConfig": "libs/material/ui/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/material/ui/tsconfig.lib.json",
+              "libs/material/ui/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
