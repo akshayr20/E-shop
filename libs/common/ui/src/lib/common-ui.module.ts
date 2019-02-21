@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CommonDirectivesModule } from '@e-shop/common/directives';
 
-import { ResponsiveImageComponent } from './responsive-image/responsive-image.component';
 import { IconComponent } from './icon/icon.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -13,11 +12,11 @@ import { KitchenComponent } from './navbar/nav-links/kitchen/kitchen.component';
 import { HouseholdComponent } from './navbar/nav-links/household/household.component';
 import { ContactUsComponent } from './navbar/nav-links/contact-us/contact-us.component';
 import { FaqsComponent } from './navbar/nav-links/faqs/faqs.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   imports: [CommonModule, CommonDirectivesModule],
   declarations: [
-    ResponsiveImageComponent,
     IconComponent,
     HeaderComponent,
     NavbarComponent,
@@ -27,14 +26,15 @@ import { FaqsComponent } from './navbar/nav-links/faqs/faqs.component';
     KitchenComponent,
     HouseholdComponent,
     ContactUsComponent,
-    FaqsComponent
+    FaqsComponent,
+    HomeComponent
   ],
   exports: [
-    ResponsiveImageComponent,
     IconComponent,
     HeaderComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ]
 })
 export class CommonUiModule {}
