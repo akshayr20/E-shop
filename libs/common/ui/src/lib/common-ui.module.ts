@@ -13,9 +13,10 @@ import { HouseholdComponent } from './navbar/nav-links/household/household.compo
 import { ContactUsComponent } from './navbar/nav-links/contact-us/contact-us.component';
 import { FaqsComponent } from './navbar/nav-links/faqs/faqs.component';
 import { HomeComponent } from './home/home.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports: [CommonModule, CommonDirectivesModule],
+  imports: [CommonModule, RouterModule, CommonDirectivesModule],
   declarations: [
     IconComponent,
     HeaderComponent,

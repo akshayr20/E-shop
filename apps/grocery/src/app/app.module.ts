@@ -10,14 +10,12 @@ import { environment } from '../environments/environment';
 import { CommonUiModule } from '@e-shop/common/ui';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app.routes';
-import { GroceryEShopModule } from '@e-shop/grocery/e-shop';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     CommonUiModule,
-    GroceryEShopModule,
     BackendModule.forRoot(environment.rootUrl),
     NxModule.forRoot(),
     AppRoutingModule,

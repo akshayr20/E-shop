@@ -1,6 +1,11 @@
 @import '../abstracts/variable';
 
 .dropdown {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-white, 1),
+    rgba($gray-lighter, 0.8)
+  );
   border: var(--line);
   box-shadow: var(--shadow-light);
   border-radius: 3px;
@@ -12,6 +17,7 @@
   width: calc(60vw);
   max-height: calc(30vw);
   overflow-y: scroll;
+  z-index: 12;
   @media only screen and (max-width: $bp-medium) {
     left: 2.5vw;
     width: calc(90vw);

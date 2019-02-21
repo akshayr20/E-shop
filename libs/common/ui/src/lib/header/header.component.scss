@@ -1,7 +1,6 @@
 @import './libs/styles/sass/abstracts/variable.scss';
 @import './libs/styles/sass/components/custom-search.scss';
 
-
 .header {
   display: grid;
   align-items: center;
@@ -43,6 +42,7 @@
   @media only screen and (max-width: $bp-medium) {
     grid-column: 4/5;
   }
+
   &__content {
     display: grid;
     justify-content: center;
@@ -51,10 +51,16 @@
     grid-template-columns: minmax(2.5rem, 4rem) max-content;
     grid-gap: 1rem;
   }
+
   &__icon {
     grid-row: 1/2;
     fill: var(--color-primary);
   }
+
+  &__link {
+    text-transform: uppercase;
+  }
+
   &__action {
     position: relative;
     display: grid;

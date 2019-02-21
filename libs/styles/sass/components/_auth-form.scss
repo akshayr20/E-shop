@@ -1,0 +1,27 @@
+@import '../abstracts/variable.scss';
+
+.auth {
+  .form {
+    width: 40vw;
+    max-height: 60vh;
+    padding: 2rem 4rem;
+    background-color: white;
+    border-radius: 4px;
+    -webkit-box-shadow: var(--shadow-dark);
+    box-shadow: var(--shadow-dark);
+    &__input {
+      width: 100%;
+      height: 25px;
+      font-size: 16px;
+      padding: 0.8rem;
+      border-bottom: 1px solid $gray-light;
+      border-width: 0 0 1px 0;
+      margin-bottom: 2rem;
+    }
+    &__btn {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+    }
+  }
+}

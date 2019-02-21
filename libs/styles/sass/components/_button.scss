@@ -1,0 +1,48 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 0.8rem;
+    transition: all 0.2s;
+    font-size: $default-font-size;
+
+    border: none;
+    cursor: pointer;
+  }
+
+  &--blue {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &--green {
+    background-color: $color-success;
+    color: $color-white;
+  }
+
+  &--orange {
+    background-color: $color-warning;
+    color: $color-white;
+  }
+  &--red {
+    background-color: $color-danger;
+    color: $color-white;
+  }
+  &--white {
+    background-color: $color-white;
+    color: $color-primary;
+  }
+
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
