@@ -4,7 +4,7 @@ import { Directive, Output, HostListener, ElementRef, EventEmitter, Input } from
   selector: '[diClickOutside]'
 })
 export class ClickOutsideDirective {
-  @Output() public diClickOutside = new EventEmitter<MouseEvent | TouchEvent>();
+  @Output() public diClickedOutside = new EventEmitter<MouseEvent | TouchEvent>();
   @Input() public disabled: boolean = false;
 
   constructor(private elementRef: ElementRef) {}
@@ -18,11 +18,11 @@ export class ClickOutsideDirective {
 
     const clickedInside = this.elementRef.nativeElement.contains(targetElement);
     if (!clickedInside) {
-      this.diClickOutside.emit(event);
+      this.diClickedOutside.emit(event);
     }
   }
 
   ngOnDestroy() {
-    this.diClickOutside.unsubscribe();
+    this.diClickedOutside.unsubscribe();
   }
 }

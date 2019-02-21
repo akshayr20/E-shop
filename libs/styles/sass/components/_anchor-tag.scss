@@ -1,12 +1,13 @@
 @import '../abstracts/variable';
 
 a {
-  color: #30323A;
+  color: #30323a;
   -webkit-transition: 0.3s color;
   transition: 0.3s color;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: $color-info;
   text-decoration: none;
   outline: none;

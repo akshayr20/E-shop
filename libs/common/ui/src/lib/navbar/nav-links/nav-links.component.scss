@@ -1,7 +1,10 @@
 .navbar {
   display: grid;
-  align-items: center;
-  justify-content: end;
   grid-template-rows: 6rem;
   grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+  &__links {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -1,0 +1,26 @@
+@import './libs/styles/sass/abstracts/variable.scss';
+
+:host {
+  position: relative;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  border: var(--line);
+  box-shadow: var(--shadow-light);
+  border-radius: 3px;
+
+  position: absolute;
+  left: -8rem;
+  top: 4rem;
+
+  &__item {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 2rem;
+    li {
+      padding: 1.2rem 2rem;
+    }
+  }
+}

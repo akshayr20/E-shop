@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CommonDirectivesModule } from '@e-shop/common/directives';
+
 import { ResponsiveImageComponent } from './responsive-image/responsive-image.component';
 import { IconComponent } from './icon/icon.component';
 import { HeaderComponent } from './header/header.component';
@@ -13,7 +15,7 @@ import { ContactUsComponent } from './navbar/nav-links/contact-us/contact-us.com
 import { FaqsComponent } from './navbar/nav-links/faqs/faqs.component';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, CommonDirectivesModule],
   declarations: [
     ResponsiveImageComponent,
     IconComponent,
