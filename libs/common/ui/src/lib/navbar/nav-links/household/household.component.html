@@ -1,39 +1,21 @@
-<!-- <li class="dropdown">
-  <a
-    href="#"
-    class="dropdown-toggle nav-stylehead"
-    data-toggle="dropdown"
-    role="button"
-    aria-haspopup="true"
-    aria-expanded="false"
-    >Household <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu multi-column columns-3">
-    <div class="agile_inner_drop_nav_info">
-      <div class="col-sm-6 multi-gd-img">
-        <ul class="multi-column-dropdown">
-          <li><a href="product2.html">Kitchen & Dining</a></li>
-          <li><a href="product2.html">Detergents</a></li>
-          <li><a href="product2.html">Utensil Cleaners</a></li>
-          <li><a href="product2.html">Floor & Other Cleaners</a></li>
-          <li><a href="product2.html">Disposables, Garbage Bag</a></li>
-          <li><a href="product2.html">Repellents & Fresheners</a></li>
-          <li><a href="product2.html"> Dishwash</a></li>
-        </ul>
-      </div>
-      <div class="col-sm-6 multi-gd-img">
-        <ul class="multi-column-dropdown">
-          <li><a href="product2.html">Pet Care</a></li>
-          <li><a href="product2.html">Cleaning Accessories</a></li>
-          <li><a href="product2.html">Pooja Needs</a></li>
-          <li><a href="product2.html">Crackers</a></li>
-          <li><a href="product2.html">Festive Decoratives</a></li>
-          <li><a href="product2.html">Plasticware</a></li>
-          <li><a href="product2.html">Home Care</a></li>
-        </ul>
-      </div>
-      <div class="clearfix"></div>
-    </div>
-  </ul>
-</li> -->
-Household
+<div diClickOutside (diClickedOutside)="isDropDownVisible = false">
+  <a class="action" (click)="isDropDownVisible = !isDropDownVisible"
+    >Household</a
+  >
+  <div class="dropdown" *ngIf="isDropDownVisible">
+    <ul class="dropdown__item">
+      <li><a href="product.html">Kitchen & Dining</a></li>
+      <li><a href="product.html">Detergents</a></li>
+      <li><a href="product.html">Utensils Cleaners</a></li>
+      <li><a href="product.html">Floor and Other Cleaners</a></li>
+      <li><a href="product.html">Disposals, Garbage Bags</a></li>
+      <li><a href="product.html">Repellents & Fresheners</a></li>
+      <li><a href="product.html">Dishwasher</a></li>
+      <li><a href="product.html">Pet Care</a></li>
+      <li><a href="product.html">Cleaning Accessories</a></li>
+      <li><a href="product.html">Festive Decorative</a></li>
+      <li><a href="product.html">Plastic Stuff</a></li>
+      <li><a href="product.html">Home Care</a></li>
+    </ul>
+  </div>
+</div>

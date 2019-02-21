@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./household.component.scss']
 })
 export class HouseholdComponent implements OnInit {
+  isDropDownVisible = false;
 
   constructor() { }
 
