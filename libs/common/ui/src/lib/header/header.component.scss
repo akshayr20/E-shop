@@ -1,7 +1,8 @@
-@import './libs/styles/sass/main.scss';
+@import './libs/styles/sass/abstracts/variable.scss';
+@import './libs/styles/sass/components/custom-search.scss';
+
 
 .header {
-  margin: 1rem 2rem;
   display: grid;
   align-items: center;
   grid-template-rows: 7rem;

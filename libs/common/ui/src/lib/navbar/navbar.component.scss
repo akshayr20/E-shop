@@ -1,0 +1,14 @@
+@import './libs/styles/sass/abstracts/variable.scss';
+:host {
+  margin-top: 2rem;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 6rem;
+  grid-template-columns: max-content 1fr;
+  grid-gap: 8rem;
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 4rem 4rem;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+}
