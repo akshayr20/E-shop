@@ -5,5 +5,10 @@
     "types": []
   },
   "exclude": ["test.ts", "**/*.spec.ts"],
-  "include": ["**/*.ts"]
+  "include": [
+    "**/*.ts",
+    "../../libs/grocery/e-shop/src/index.ts",
+    "../../libs/grocery/admin/src/index.ts",
+    "../../libs/authentication/src/index.ts"
+  ]
 }

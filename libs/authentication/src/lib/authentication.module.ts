@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Route } from '@angular/router';
 import { LoginComponent } from './login/login.component';
-
-export const authenticationRoutes: Route[] = [];
+import { AuthenticationRoutingModule } from './authentication.routes';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 @NgModule({
-  imports: [CommonModule, RouterModule],
-  declarations: [LoginComponent]
+  imports: [CommonModule, AuthenticationRoutingModule],
+  declarations: [LoginComponent, ForgotPasswordComponent]
 })
 export class AuthenticationModule {}

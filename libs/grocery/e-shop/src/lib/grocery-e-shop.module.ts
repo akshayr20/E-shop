@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { GroceryEShopRoutingModule } from './grocery-e-shop.route.module';
+
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { CheckOutComponent } from './check-out/check-out.component';
 import { OrderSuccessComponent } from './order-success/order-success.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-
-    RouterModule.forChild([
-      /* {path: '', pathMatch: 'full', component: InsertYourComponentHere} */
-    ])
-  ],
-  declarations: [ShoppingCartComponent, CheckOutComponent, OrderSuccessComponent, MyOrdersComponent]
+  imports: [CommonModule, GroceryEShopRoutingModule],
+  declarations: [
+    ShoppingCartComponent,
+    CheckOutComponent,
+    OrderSuccessComponent,
+    MyOrdersComponent,
+    ProductsComponent
+  ]
 })
 export class GroceryEShopModule {}

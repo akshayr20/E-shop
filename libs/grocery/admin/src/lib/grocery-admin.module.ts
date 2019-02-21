@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
 import { AdminProductsComponent } from './admin-products/admin-products.component';
 import { OrdersComponent } from './orders/orders.component';
+import { GroceryAdminRoutingModule } from './grocery-admin.routes';
 
 @NgModule({
   imports: [
     CommonModule,
-
-    RouterModule.forChild([
-      /* {path: '', pathMatch: 'full', component: InsertYourComponentHere} */
-    ])
+    GroceryAdminRoutingModule
   ],
   declarations: [AdminProductsComponent, OrdersComponent]
 })
