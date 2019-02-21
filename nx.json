@@ -29,14 +29,14 @@
     "material-ui": {
       "tags": ["ui"]
     },
-    "grocery-feature-products": {
-      "tags": ["e-cart"]
+    "grocery-e-shop": {
+      "tags": ["eshop"]
     },
-    "grocery-feature-product-detail": {
-      "tags": ["e-cart"]
+    "grocery-admin": {
+      "tags": ["eshop"]
     },
-    "grocery-feature-product-checkout": {
-      "tags": ["e-cart"]
+    "authentication": {
+      "tags": ["auth"]
     }
   }
 }

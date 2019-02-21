@@ -299,26 +299,26 @@
         }
       }
     },
-    "grocery-feature-products": {
-      "root": "libs/grocery/feature-products",
-      "sourceRoot": "libs/grocery/feature-products/src",
+    "grocery-e-shop": {
+      "root": "libs/grocery/e-shop",
+      "sourceRoot": "libs/grocery/e-shop/src",
       "projectType": "library",
       "prefix": "e-shop",
       "architect": {
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "libs/grocery/feature-products/src/test.ts",
-            "tsConfig": "libs/grocery/feature-products/tsconfig.spec.json",
-            "karmaConfig": "libs/grocery/feature-products/karma.conf.js"
+            "main": "libs/grocery/e-shop/src/test.ts",
+            "tsConfig": "libs/grocery/e-shop/tsconfig.spec.json",
+            "karmaConfig": "libs/grocery/e-shop/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/grocery/feature-products/tsconfig.lib.json",
-              "libs/grocery/feature-products/tsconfig.spec.json"
+              "libs/grocery/e-shop/tsconfig.lib.json",
+              "libs/grocery/e-shop/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
@@ -330,26 +330,26 @@
         }
       }
     },
-    "grocery-feature-product-detail": {
-      "root": "libs/grocery/feature-product-detail",
-      "sourceRoot": "libs/grocery/feature-product-detail/src",
+    "grocery-admin": {
+      "root": "libs/grocery/admin",
+      "sourceRoot": "libs/grocery/admin/src",
       "projectType": "library",
       "prefix": "e-shop",
       "architect": {
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "libs/grocery/feature-product-detail/src/test.ts",
-            "tsConfig": "libs/grocery/feature-product-detail/tsconfig.spec.json",
-            "karmaConfig": "libs/grocery/feature-product-detail/karma.conf.js"
+            "main": "libs/grocery/admin/src/test.ts",
+            "tsConfig": "libs/grocery/admin/tsconfig.spec.json",
+            "karmaConfig": "libs/grocery/admin/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/grocery/feature-product-detail/tsconfig.lib.json",
-              "libs/grocery/feature-product-detail/tsconfig.spec.json"
+              "libs/grocery/admin/tsconfig.lib.json",
+              "libs/grocery/admin/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
@@ -361,26 +361,26 @@
         }
       }
     },
-    "grocery-feature-product-checkout": {
-      "root": "libs/grocery/feature-product-checkout",
-      "sourceRoot": "libs/grocery/feature-product-checkout/src",
+    "authentication": {
+      "root": "libs/authentication",
+      "sourceRoot": "libs/authentication/src",
       "projectType": "library",
       "prefix": "e-shop",
       "architect": {
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "libs/grocery/feature-product-checkout/src/test.ts",
-            "tsConfig": "libs/grocery/feature-product-checkout/tsconfig.spec.json",
-            "karmaConfig": "libs/grocery/feature-product-checkout/karma.conf.js"
+            "main": "libs/authentication/src/test.ts",
+            "tsConfig": "libs/authentication/tsconfig.spec.json",
+            "karmaConfig": "libs/authentication/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/grocery/feature-product-checkout/tsconfig.lib.json",
-              "libs/grocery/feature-product-checkout/tsconfig.spec.json"
+              "libs/authentication/tsconfig.lib.json",
+              "libs/authentication/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
