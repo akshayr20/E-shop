@@ -12,8 +12,8 @@ import { KitchenComponent } from './navbar/nav-links/kitchen/kitchen.component';
 import { HouseholdComponent } from './navbar/nav-links/household/household.component';
 import { ContactUsComponent } from './navbar/nav-links/contact-us/contact-us.component';
 import { FaqsComponent } from './navbar/nav-links/faqs/faqs.component';
-import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 @NgModule({
   imports: [CommonModule, RouterModule, CommonDirectivesModule],
@@ -28,14 +28,14 @@ import { RouterModule } from '@angular/router';
     HouseholdComponent,
     ContactUsComponent,
     FaqsComponent,
-    HomeComponent
+    ProductCardComponent
   ],
   exports: [
     IconComponent,
     HeaderComponent,
     NavbarComponent,
     FooterComponent,
-    HomeComponent
+    ProductCardComponent
   ]
 })
 export class CommonUiModule {}

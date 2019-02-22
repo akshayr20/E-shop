@@ -3,6 +3,11 @@ import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 
 const appRoutes: Routes = [
   {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'user'
+  },
+  {
     path: 'user',
     loadChildren: '@e-shop/grocery/e-shop#GroceryEShopModule'
   },

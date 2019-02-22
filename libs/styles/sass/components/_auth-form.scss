@@ -1,4 +1,5 @@
 @import '../abstracts/variable.scss';
+@import '../base/animations';
 
 .auth {
   .form {
@@ -9,6 +10,8 @@
     border-radius: 4px;
     -webkit-box-shadow: var(--shadow-dark);
     box-shadow: var(--shadow-dark);
+    animation-name: scaling;
+    animation-duration: 1.2s;
     @media only screen and (max-width: $bp-medium) {
       width: 90vw;
       max-height: 70vh;
@@ -24,9 +27,8 @@
       margin-bottom: 2rem;
     }
     &__btn {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 2rem;
+      display: flex;
+      justify-content: flex-start;
     }
   }
 }

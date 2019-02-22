@@ -5,10 +5,11 @@ import { UserService } from './service/user.service';
 import { ProductService } from './service/product.service';
 import { OrderService } from './service/order.service';
 import { ApiConfig } from './api-config';
+import { ShoppingCartService } from './service/shopping-cart.service';
 
 @NgModule({
   imports: [CommonModule, HttpClientModule],
-  providers: [UserService, ProductService, OrderService]
+  providers: [UserService, ProductService, OrderService, ShoppingCartService]
 })
 export class BackendModule {
   static forRoot(rootUrl: string = ''): ModuleWithProviders {

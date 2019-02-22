@@ -7,7 +7,7 @@ import { CheckOutComponent } from './check-out/check-out.component';
 import { OrderSuccessComponent } from './order-success/order-success.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
 import { ProductsComponent } from './products/products.component';
-
+import { HomeComponent } from './home/home.component';
 @NgModule({
   imports: [CommonModule, GroceryEShopRoutingModule],
   declarations: [
@@ -15,7 +15,8 @@ import { ProductsComponent } from './products/products.component';
     CheckOutComponent,
     OrderSuccessComponent,
     MyOrdersComponent,
-    ProductsComponent
+    ProductsComponent,
+    HomeComponent
   ]
 })
 export class GroceryEShopModule {}

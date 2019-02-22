@@ -268,37 +268,6 @@
         }
       }
     },
-    "material-ui": {
-      "root": "libs/material/ui",
-      "sourceRoot": "libs/material/ui/src",
-      "projectType": "library",
-      "prefix": "e-shop",
-      "architect": {
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "libs/material/ui/src/test.ts",
-            "tsConfig": "libs/material/ui/tsconfig.spec.json",
-            "karmaConfig": "libs/material/ui/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/material/ui/tsconfig.lib.json",
-              "libs/material/ui/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
-        }
-      },
-      "schematics": {
-        "@nrwl/schematics:component": {
-          "styleext": "scss"
-        }
-      }
-    },
     "grocery-e-shop": {
       "root": "libs/grocery/e-shop",
       "sourceRoot": "libs/grocery/e-shop/src",

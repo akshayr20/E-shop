@@ -1,7 +1,7 @@
 import { Injectable, Optional } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ApiConfig } from '../api-config';
-import { Order } from '@e-shop/data-models/src';
+import { Order } from '@e-shop/data-models';
 
 @Injectable({
   providedIn: 'root'

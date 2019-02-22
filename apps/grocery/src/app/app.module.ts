@@ -8,7 +8,6 @@ import { BackendModule, AddTokenInterceptor } from '@e-shop/backend';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 import { CommonUiModule } from '@e-shop/common/ui';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app.routes';
 
 @NgModule({
@@ -18,8 +17,7 @@ import { AppRoutingModule } from './app.routes';
     CommonUiModule,
     BackendModule.forRoot(environment.rootUrl),
     NxModule.forRoot(),
-    AppRoutingModule,
-    BrowserAnimationsModule
+    AppRoutingModule
   ],
   providers: [
     {

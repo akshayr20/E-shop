@@ -1,15 +1,18 @@
 <div class="popup">
   <div class="auth">
     <form class="form" diClickOutside (diClickedOutside)="clickedOutSide()">
-      <h2 class="center-text">Welcome!</h2>
-      <h3 class="u-mb-sm">
-        Please use your email ID and password to login below.
+      <h2 class="center-text">Sign In </h2>
+      <h3>
+        Sign In now, Let's start your Grocery Shopping. Don't have an account?
+        <a [routerLink]="['/auth/', 'sign-up']">
+          Sign Up Now</a>
       </h3>
+
+
       <input class="form__input" type="text" placeholder="Email" />
       <input class="form__input" type="password" placeholder="Password" />
       <div class="form__btn">
-        <button class="btn btn--blue">Login</button>
-        <button class="btn btn--orange">Sign Up</button>
+        <button class="btn btn--blue">SIGN IN</button>
       </div>
     </form>
   </div>

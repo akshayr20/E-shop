@@ -26,9 +26,6 @@
     "common-directives": {
       "tags": ["di"]
     },
-    "material-ui": {
-      "tags": ["ui"]
-    },
     "grocery-e-shop": {
       "tags": ["eshop"]
     },
