@@ -14,7 +14,7 @@ import { ContactUsComponent } from './navbar/nav-links/contact-us/contact-us.com
 import { FaqsComponent } from './navbar/nav-links/faqs/faqs.component';
 import { RouterModule } from '@angular/router';
 import { ProductCardComponent } from './product-card/product-card.component';
-import { ProductQuantityComponent } from './product-card/product-quantity/product-quantity.component';
+import { ProductQuantityComponent } from './product-quantity/product-quantity.component';
 
 @NgModule({
   imports: [CommonModule, RouterModule, CommonDirectivesModule],
@@ -37,7 +37,8 @@ import { ProductQuantityComponent } from './product-card/product-quantity/produc
     HeaderComponent,
     NavbarComponent,
     FooterComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    ProductQuantityComponent
   ]
 })
 export class CommonUiModule {}
