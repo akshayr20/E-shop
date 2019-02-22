@@ -28,6 +28,10 @@ export class ProductService {
     );
   }
 
+  getAllCategories() {
+
+  }
+
   createProduct(order: Product) {}
 
   updateProductById() {}

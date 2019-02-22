@@ -1,3 +1,20 @@
-<p>
-  product-card works!
-</p>
+<div *ngIf="product.title" class="card">
+  <img [src]="product.imageUrl" alt="{{ product.title }}" />
+  <div class="card__body">
+    <h3 class="heading-3">{{ product.title }}</h3>
+    <h4 class="heading-5">{{ product.price | currency: 'USD':true }}</h4>
+  </div>
+  <div *ngIf="showActions && shoppingCart" class="card__footer">
+    <button
+      class="btn btn--blue"
+      *ngIf="0 === 0; else: updateQuantity"
+      (click)="addToCart()"
+    >
+      Add to Cart
+    </button>
+    <ng-template #updateQuantity>
+      <ui-product-quantity [product]="product" [shoppingCart]="shoppingCart">
+      </ui-product-quantity>
+    </ng-template>
+  </div>
+</div>

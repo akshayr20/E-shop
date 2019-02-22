@@ -1,0 +1,10 @@
+.products {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 25rem));
+  grid-template-rows: max-content;
+  grid-gap: 2rem;
+  &__category {
+    grid-column: 1/-1;
+  }
+}

@@ -1,0 +1,8 @@
+<div class="products" *ngIf="(cart$ | async) as cart">
+  <ng-container *ngFor="let p of filteredProducts; let i = index">
+    <h2 class="heading-2 heading-2--dark products__category" *ngIf="i === 0">
+      {{ p.category }}
+    </h2>
+    <ui-product-card [product]="p" [shoppingCart]="cart"></ui-product-card>
+  </ng-container>
+</div>
