@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { NxModule } from '@nrwl/nx';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { BackendModule, AddTokenInterceptor } from '@e-shop/backend';
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { AppRoutingModule } from './app.routes';
   imports: [
     BrowserModule,
     CommonUiModule,
+    NgbModule.forRoot(),
     BackendModule.forRoot(environment.rootUrl),
     NxModule.forRoot(),
     AppRoutingModule
