@@ -1,7 +1,12 @@
+:host {
+  max-width: 90vw;
+}
 .products {
   margin-top: 2rem;
+  max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 25rem));
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
   grid-template-rows: max-content;
   grid-gap: 2rem;
   &__category {

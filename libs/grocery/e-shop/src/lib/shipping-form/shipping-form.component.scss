@@ -1,0 +1,13 @@
+@import './libs/styles/sass/components/input.scss';
+@import './libs/styles/sass/utilities/utilities';
+
+:host {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1.25rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}

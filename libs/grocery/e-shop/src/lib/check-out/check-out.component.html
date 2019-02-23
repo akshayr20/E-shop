@@ -1,7 +1,5 @@
-<h2>Shipping</h2>
-<div class="row" *ngIf="(cart$ | async) as cart">
-  <div class="col-6"><e-shop-shipping-form [cart]="cart"></e-shop-shipping-form></div>
-  <div class="col-6">
-    <e-shop-shopping-cart-summary [cart]="cart"></e-shop-shopping-cart-summary>
-  </div>
+<h2 class="heading-2 heading-2--dark u-mb-sm">Shipping</h2>
+<div class="checkout" *ngIf="(cart$ | async) as cart">
+  <e-shop-shopping-cart-summary [cart]="cart"></e-shop-shopping-cart-summary>
+  <e-shop-shipping-form [cart]="cart"></e-shop-shipping-form>
 </div>

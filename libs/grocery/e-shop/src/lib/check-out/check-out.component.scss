@@ -1,0 +1,13 @@
+@import './libs/styles/sass/abstracts/variable.scss';
+:host {
+  max-width: 90vw;
+}
+
+.checkout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  @media only screen and (max-width: $bp-small) {
+  grid-template-columns: 1fr;
+  }
+}
