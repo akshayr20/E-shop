@@ -8,6 +8,7 @@ import { CheckOutComponent } from './check-out/check-out.component';
 
 import { OrderSuccessComponent } from './order-success/order-success.component';
 import { NgModule } from '@angular/core';
+import { MyOrdersComponent } from './my-orders/my-orders.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,10 @@ const routes: Routes = [
       {
         path: 'order-success',
         component: OrderSuccessComponent
+      },
+      {
+        path: 'orders',
+        component: MyOrdersComponent
       }
     ]
   }

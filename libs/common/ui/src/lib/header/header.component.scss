@@ -52,6 +52,19 @@
     grid-gap: 1rem;
   }
 
+  .account {
+    position: relative;
+    &__dropdown {
+      position: absolute;
+      top: 3rem;
+      left: -1rem;
+      z-index: 10;
+      background: white;
+      padding: 1rem 2rem;
+      border: 1px solid #ccc;
+    }
+  }
+
   &__icon {
     grid-row: 1/2;
     fill: var(--color-primary);

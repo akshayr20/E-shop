@@ -23,7 +23,7 @@ export class ProductService {
   }
 
   getProductById(id: string) {
-    return this.http.get<Product[]>(
+    return this.http.get<Product>(
       `${this._rootUrl}/${encodeURIComponent(String(id))}`
     );
   }
