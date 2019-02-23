@@ -10,6 +10,7 @@ import { LoaderService } from './loader.service';
   providedIn: 'root'
 })
 export class UserService {
+  user$: Observable<any>;
   private _rootUrl = '';
   public TOKEN_ID = 'TOKEN';
 

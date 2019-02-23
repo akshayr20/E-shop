@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, BehaviorSubject } from 'rxjs';
-import { ShoppingCart, Product } from '@e-shop/data-models/src';
+import { ShoppingCart, Product } from '@e-shop/data-models';
 
 @Injectable({
   providedIn: 'root'
