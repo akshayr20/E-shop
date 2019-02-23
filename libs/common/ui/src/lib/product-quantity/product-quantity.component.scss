@@ -1,7 +1,4 @@
 .quantity {
-  display: grid;
-  grid-template-columns: minmax(1.5rem, 3rem) max-content minmax(1.5rem, 3rem);
-  align-items: center;
-  justify-content: center;
-  grid-gap: 1.5rem;
+  height: 37px;
+  line-height: 37px;
 }
