@@ -1,1 +1,60 @@
-<a [routerLink]="['/admin/products/new']">New Product</a>
+<div class="products">
+  <a
+    [routerLink]="['/admin/products/new']"
+    class="ui-btn ui-btn__primary u-mb-sm"
+    >New Product</a
+  >
+
+  <p>Add Filter Logic Here</p>
+
+  <table class="table table-striped products__table">
+    <thead>
+      <tr>
+        <th scope="col">Product</th>
+        <th scope="col">Price</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products" class="product">
+        <td>
+          <img [src]="product.imageUrl" class="mr-2" style="width: 2rem" />
+          {{ product.name }}
+        </td>
+        <td>{{ product.price }}</td>
+        <td>
+          <a [routerLink]="['/admin/products/', product.id]"
+            ><ui-icon
+              class="product__edit"
+              name="icon-mode_edit"
+              size="2x"
+            ></ui-icon
+          ></a>
+        </td>
+        <td (click)="deleteProduct(product.id)">
+          <ui-icon
+            class="product__delete"
+            name="icon-delete"
+            size="2x"
+          ></ui-icon>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="d-flex justify-content-between p-2">
+    <select class="custom-select" style="width: auto" [(ngModel)]="pageSize">
+      <option [ngValue]="2">2 items per page</option>
+      <option [ngValue]="4">4 items per page</option>
+      <option [ngValue]="6">6 items per page</option>
+    </select>
+    <ngb-pagination
+      [collectionSize]="collectionSize"
+      [(page)]="page"
+      [pageSize]="pageSize"
+      [maxSize]="5"
+    >
+    </ngb-pagination>
+  </div>
+</div>

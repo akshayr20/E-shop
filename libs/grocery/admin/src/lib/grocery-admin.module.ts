@@ -4,15 +4,18 @@ import { AdminProductsComponent } from './admin-products/admin-products.componen
 import { OrdersComponent } from './orders/orders.component';
 import { GroceryAdminRoutingModule } from './grocery-admin.routes';
 import { ProductFormComponent } from './product-form/product-form.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonUiModule } from '@e-shop/common/ui';
+import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
     CommonModule,
     CommonUiModule,
     GroceryAdminRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    NgbPaginationModule
   ],
   declarations: [AdminProductsComponent, OrdersComponent, ProductFormComponent]
 })

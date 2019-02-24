@@ -1,0 +1,14 @@
+@import './libs/styles/sass/abstracts/variable.scss';
+
+.products {
+  padding: 1.2rem;
+
+  .product {
+    &__edit {
+      fill: $color-primary;
+    }
+    &__delete {
+      fill: $color-danger;
+    }
+  }
+}
