@@ -3,56 +3,7 @@
     <img src="./../assets/images/logo.png" alt="E-Shop logo" />
   </a>
   <div class="search">
-    <ui-categories></ui-categories>
-    <ui-search-bar></ui-search-bar>
+    <ui-search></ui-search>
   </div>
-  <div class="nav">
-    <div
-      class="nav__content"
-      diClickOutside
-      (diClickedOutside)="showMyAccountsDropDown = false"
-    >
-      <ui-icon
-        name="icon-account_circle"
-        class="nav__icon"
-        size="4x"
-        (click)="showMyAccountsDropDown = !showMyAccountsDropDown"
-      ></ui-icon>
-      <div class="nav__action">
-        <div class="account">
-          <a
-            class="text-uppercase heading-3 heading-3--dark"
-            (click)="showMyAccountsDropDown = !showMyAccountsDropDown"
-            >My Account</a
-          >
-          <ul class="account__dropdown" *ngIf="showMyAccountsDropDown">
-            <li><a [routerLink]="['/', '']"> My Account</a></li>
-            <li><a [routerLink]="['/user/', 'orders']"> My Orders</a></li>
-            <li><a [routerLink]="['/admin/', 'orders']"> Manage Orders</a></li>
-            <li>
-              <a [routerLink]="['/admin/', 'products']"> Manage Products</a>
-            </li>
-            <li><a> Logout</a></li>
-          </ul>
-        </div>
-        <span>
-          <a [routerLink]="['/', 'auth']" class="nav__link">Sign In</a> /
-          <a [routerLink]="['/auth/', 'sign-up']" class="nav__link">Sign up</a>
-        </span>
-      </div>
-    </div>
-    <div >
-      <a [routerLink]="['/user/', 'shopping-cart']" class="nav__content">
-        <ui-icon
-          name="icon-add_shopping_cart"
-          class="nav__icon"
-          size="4x"
-        ></ui-icon>
-        <div class="nav__action">
-          <h3 class="text-uppercase heading-3">My CART:</h3>
-          <span>Rs:500</span> <span class="item-count">7</span>
-        </div>
-      </a>
-    </div>
-  </div>
+  <div class="nav"><ui-navbar></ui-navbar></div>
 </header>

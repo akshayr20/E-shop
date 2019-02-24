@@ -1,0 +1,57 @@
+@import './libs/styles/sass/abstracts/variable.scss';
+
+.nav {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 2rem;
+  &__content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 7rem;
+    grid-template-columns: minmax(2.5rem, 4rem) max-content;
+    grid-gap: 1rem;
+  }
+
+  .account {
+    position: relative;
+    &__dropdown {
+      position: absolute;
+      top: 3rem;
+      left: -1rem;
+      z-index: 10;
+      background: white;
+      padding: 1rem 2rem;
+      border: 1px solid #ccc;
+    }
+  }
+
+  &__icon {
+    grid-row: 1/2;
+    fill: var(--color-primary);
+  }
+
+  &__link {
+    text-transform: uppercase;
+  }
+
+  &__action {
+    position: relative;
+    display: grid;
+    grid-template-rows: max-content max-content;
+  }
+}
+
+.item-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: $color-info;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  position: absolute;
+  top: -0.8rem;
+  left: -1.6rem;
+}
