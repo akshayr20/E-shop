@@ -26,6 +26,10 @@ export class OrderService {
     return this.http.get<Order[]>(`${this._rootUrl}/${id}`);
   }
 
+  getOrderByUser(id: string) {
+
+  }
+
   createOrder(order: Order) {
 
   }

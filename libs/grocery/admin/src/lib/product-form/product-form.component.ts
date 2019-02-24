@@ -27,7 +27,11 @@ export class ProductFormComponent implements OnInit {
         .subscribe(p => (this.product = p));
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.product = {
+      title: 'Almonds'
+    }
+  }
 
   save(product) {
     this.router.navigate(['/admin/products']);

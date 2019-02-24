@@ -1,0 +1,27 @@
+@import './libs/styles/sass/abstracts/variable.scss';
+@import './libs/styles/sass/components/input.scss';
+@import './libs/styles/sass/utilities/utilities';
+:host {
+  max-width: 90vw;
+}
+
+.product {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    button {
+      margin-top: auto;
+    }
+  }
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+    button {
+      margin-top: 0;
+    }
+  }
+}
