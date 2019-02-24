@@ -1,0 +1,13 @@
+@import './libs/styles/sass/abstracts/variable.scss';
+
+.form {
+  &__select {
+    padding: 1.2rem;
+    background-color: $gray-lighter;
+    border: none;
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 16rem;
+      padding: 1rem;
+    }
+  }
+}

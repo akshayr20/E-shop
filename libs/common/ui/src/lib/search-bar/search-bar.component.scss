@@ -1,18 +1,9 @@
-@import '../abstracts/variable';
-/*----------------------------*\
-	Search Bar
-\*----------------------------*/
+@import './libs/styles/sass/abstracts/variable.scss';
 
 .search {
-  flex: 0 0 40%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: $bp-smallest) {
-    order: 1;
-    flex: 0 0 100%;
-  }
 
   &__input {
     font-family: inherit;
@@ -32,19 +23,7 @@
       font-weight: 100;
     }
   }
-  &__button {
-    border: none;
-    background: white;
-    &:focus {
-      outline: none;
-    }
-
-    &:active {
-      transform: translateY(2px);
-    }
-  }
   &__icon {
-    height: 2rem;
     width: 2rem;
   }
 }
